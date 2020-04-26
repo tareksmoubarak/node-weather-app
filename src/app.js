@@ -34,7 +34,8 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        image: './img/img-1.jpg'
+        image: './img/img-1.jpg',
+        content: 'This site was created by Tarek Moubarak. It uses data from mapbox.com and weatherstack.com'
     })
 });
 
