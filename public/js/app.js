@@ -5,7 +5,7 @@ const getWeather = (location) => {
                 messageOne.textContent = data.error;
             } else{
                 messageOne.innerHTML = '<b>Location:</b> ' + data.placeName;
-                messageTwo.textContent = 'The weather is ' + data.description + ". It's " + data.temperature + '. But feels like ' + data.feelslike;
+                messageTwo.textContent = 'The weather is ' + data.description + ". It's " + data.temperature + '. But feels like ' + data.feelslike + '. Humidity is: ' + data.humidity;
             }
         });
     });
